@@ -22,7 +22,10 @@
             <div class="pretalx-schedule-day-header-row">
                 <span class="pretalx-schedule-time-column pretalx-schedule-day-header"></span>
                 {% for room in day.rooms %}
-                    <div class="pretalx-schedule-day-room-header">{{ room.name }}</div>
+                    <div class="pretalx-schedule-day-room-header">
+                        {{ room.name }}
+                        <a href="https://meet.jit.si/vcc-{{ room.id }}"><i class="fa fa-eye"></i></a>
+                    </div>
                 {% endfor %}
             </div>
             <div class="pretalx-schedule-rooms">
