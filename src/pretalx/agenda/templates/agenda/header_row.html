@@ -5,6 +5,7 @@
         <a href="{{ request.event.urls.schedule }}" class="btn btn-outline-success {% if "/schedule/" in request.path %} active{% endif %}"><i class="fa fa-calendar"></i> {% trans "Schedule" %}
         </a><a href="{{ request.event.urls.talks }}" class="btn btn-outline-success {% if "/talk/" in request.path %} active{% endif %}"><i class="fa fa-comments-o"></i> {% trans "Talks" %}
         </a><a href="{{ request.event.urls.speakers }}" class="btn btn-outline-success {% if "/speaker/" in request.path %} active{% endif %}"><i class="fa fa-group"></i> {% trans "Speakers" %}</a>
+        </a><a href="{{ request.event.urls.live }}" class="btn btn-outline-success {% if "/live/" in request.path %} active{% endif %}"><i class="fa fa-tv"></i> {% trans "Live" %}</a>
     </div>
     <div class="header-right">
         {% if with_extra %}

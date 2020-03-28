@@ -1,0 +1,12 @@
+{% extends "live/base.html" %}
+{% load compress %}
+{% load i18n %}
+{% load rich_text %}
+{% load static %}
+
+{% block live_content %}
+    {% include "agenda/header_row.html" %}
+<p>
+Hello {{ user }}!
+</p>
+{% endblock %}

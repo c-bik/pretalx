@@ -33,6 +33,7 @@ urlpatterns = [
     url(r"^500$", error_view(500)),
     url(r"^orga/", include("pretalx.orga.urls", namespace="orga")),
     url(r"^api/", include("pretalx.api.urls", namespace="api")),
+    url(r"", include("pretalx.live.urls", namespace="live")),
     url(r"", include("pretalx.agenda.urls", namespace="agenda")),
     url(r"", include("pretalx.cfp.urls", namespace="cfp")),
     url(r"", include((plugin_patterns, "plugins"))),

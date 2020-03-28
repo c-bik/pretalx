@@ -75,6 +75,7 @@ LOCAL_APPS = [
     "pretalx.schedule",
     "pretalx.submission",
     "pretalx.agenda",
+    "pretalx.live",
     "pretalx.cfp",
     "pretalx.orga",
 ]

@@ -1,0 +1,17 @@
+{% extends "common/base.html" %}
+{% load i18n %}
+{% load rules %}
+
+{% block custom_header %}
+    {% block live_custom_header %}
+    {% endblock %}
+{% endblock %}
+
+{% block nav_link %}
+{{ request.event.urls.live }}
+{% endblock %}
+
+{% block content %}
+    {% block live_content %}
+    {% endblock %}
+{% endblock %}
