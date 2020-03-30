@@ -250,6 +250,7 @@ class Event(LogMixin, models.Model):
         schedule = "{base}schedule/"
         sneakpeek = "{base}sneak/"
         talks = "{base}talk/"
+        live = "{base}live/"
         speakers = "{base}speaker/"
         changelog = "{schedule}changelog/"
         feed = "{schedule}feed.xml"

@@ -75,6 +75,7 @@ LOCAL_APPS = [
     "pretalx.schedule",
     "pretalx.submission",
     "pretalx.agenda",
+    "pretalx.live",
     "pretalx.cfp",
     "pretalx.orga",
 ]
@@ -111,8 +112,8 @@ ALLOWED_HOSTS = [
 ]  # We have our own security middleware to allow for custom event URLs
 
 ROOT_URLCONF = "pretalx.urls"
-STATIC_URL = "/static/"
-MEDIA_URL = "/media/"
+STATIC_URL = config.get("site", 'static')
+MEDIA_URL = config.get('site', 'media')
 FILE_UPLOAD_DIRECTORY_PERMISSIONS = 0o755
 
 
